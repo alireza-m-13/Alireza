@@ -63,9 +63,10 @@ class MainActivity : Activity() {
             }
         })
         layout.addView(TextView(this).apply {
-            text = "\nمتن پاسخ:\nسلام، الان امکان پاسخ‌گویی ندارم؛ بعداً با شما تماس می‌گیرم.\n\nدستیار هوش مصنوعی"
-            textSize = 18f
-        })
+    text = "\nمتن پیام خودکار:\nسلام، الان سر کار هستم؛ بعداً با شما تماس می‌گیرم.\n\nدستیار هوش مصنوعی"
+    textSize = 18f
+})
+        
         setContentView(layout)
         refreshStatus()
     }
