@@ -2,9 +2,11 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
+
 android {
     namespace = "com.alireza.aismsassistant"
     compileSdk = 35
+
     defaultConfig {
         applicationId = "com.alireza.aismsassistant"
         minSdk = 23
@@ -12,14 +14,12 @@ android {
         versionCode = 1
         versionName = "1.0.0"
     }
-}
 
-android {
-    // ... تنظیمات دیگر
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
+
     kotlinOptions {
         jvmTarget = "17"
     }
